@@ -430,7 +430,7 @@ class CaptureRunner:
             byteImgIO.seek(0)
             byteImg = byteImgIO.read()
             f.write(byteImg)
-        
+        logging.info("Thumbnail created")
         resp = message(True, "thumbnail generated")
         return resp, 200 
 

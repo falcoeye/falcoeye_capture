@@ -32,4 +32,5 @@ with open(capture_file) as f:
     data = json.load(f)
 
 CaptureRunner.run_from_dict(data)
+logging.info(f"Capture completed")
 
